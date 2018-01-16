@@ -55,5 +55,8 @@ for line in open("C:/tal/corpus-aoriste.txt"):
             a=a[0:4]+a[5:len(a)]
         if (amasal(a)=='cccecec'):
             a=a[0:3]+a[4:len(a)]
+        if (amasal(a)=='ccecec'):
+            a=a[0:1]+'e'+a[1:2]+a[3:len(a)]
+
         print i.decode('utf8'), '->', a
         a=""
